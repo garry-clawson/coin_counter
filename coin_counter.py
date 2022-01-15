@@ -1,3 +1,6 @@
+#Source and credits -> https://github.com/kineticR/Image-coin-counter/blob/master/coin%20counter.py 
+
+
 # import libraries
 import numpy as np
 import cv2
