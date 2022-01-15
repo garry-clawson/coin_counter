@@ -7,7 +7,7 @@ import cv2
 
 
 # load image
-img = cv2.imread("seperated_coins.jpg")
+img = cv2.imread("overlapping_coins.jpg")
 
 
 # prep image - blur and convert to grey scale
@@ -18,7 +18,6 @@ blurred = cv2.GaussianBlur(grey, (17, 17), 0)
 # show blurred image and grey scaled image
 cv2.imshow("grey scale", grey)
 cv2.imshow("blurred", blurred)
-cv2.waitKey(0)
 
 
 # canny edge detector
@@ -27,7 +26,7 @@ outline = cv2.Canny(blurred, 30, 150)
 
 # show canny edge detector
 cv2.imshow("The edges", outline)
-cv2.waitKey(0)
+
 
 
 # find the contours
